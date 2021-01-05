@@ -1,1 +1,130 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+    margin: 0px !important;
+    background-color: #e8ecef54;
+}
+
+.noMargin{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.card-title{
+    height: 45px !important;
+}
+
+.half-width{
+    width: 120px !important;
+}
+
+.mid-width{
+    width: 200px !important;
+}
+
+.example-icon {
+    padding: 0 14px;
+}
+  
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.cLink{
+    cursor: pointer;
+
+}
+.cLink:hover{
+    color: green !important;
+    font-weight: bold;
+}
+
+.buttonActivate{
+    background: #e8ecef !important;
+}
+
+table {
+    width: 100%;
+}
+tr.mat-row {
+    /* height: 35px !important; */
+}
+
+.table td, .table th {
+     border-top: 1px solid white !important;
+}
+
+body::-webkit-scrollbar {
+    width: .5em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.mat-header-cell{
+    font-size: 16px;
+    font-weight: bold;
+    background: #fcfcfc;
+}
+
+.table-border{
+    border: 1px solid #f7f9fa;
+}
+
+.example-icon {
+    padding: 0 14px;
+}
+  
+.spacer {
+    flex: 1 1 auto;
+}
+.amount{
+    text-align: center !important;
+}
+
+.right{
+    text-align: right;
+}
+
+.paginator{
+    margin-top: 270px;
+    margin-left: 195px;
+}
+
+.link{
+    cursor: pointer;
+    color: #2c9af3 !important;
+    font-weight: 700;
+}
+
+.pdfText{
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.text{
+    font-size: 14px;
+    font-weight: bold;
+    color: #607D8B;
+}
+
+.bActive{
+    background: #e8ecef !important;
+}
+
+.breadcrumb{
+    background-color: #d5e1ec !important;
+    padding:5px 7px ;
+}
+.cdk-overlay-pane{
+    width:fit-content !important;
+}

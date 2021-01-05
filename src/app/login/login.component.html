@@ -1,0 +1,30 @@
+<img src="assets/images//trinvik.png" class="company-logo">
+<img src="assets/images//ursumandali.png" class="society-logo">
+<div class="main-div">
+    <div class="card-deck">
+        <div class="card example-card mat-elevation-z8">
+            <div class="card-header text-center">
+                <h1>User Login</h1>
+            </div>
+            <img src="assets/images//lekha.png" class="software-img" alt="...">
+            <form (ngSubmit)="login()" #loginForm="ngForm">
+                <div class="card-body">
+                    <mat-form-field appearance="outline" style="width:100%;">
+                        <mat-label> Enter Username </mat-label>
+                        <input name="email" type="text" matInput autofocus required [(ngModel)]="loginCredentials.username">
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" style="width:100%">
+                        <mat-label> Enter Password </mat-label>
+                        <input name="password" type="password" matInput required [(ngModel)]="loginCredentials.password">
+                    </mat-form-field>
+                </div>
+                <div class="card-footer">
+                    <button mat-raised-button color="primary" type="submit" style="width: 100%;"
+                        [disabled]="loginForm.invalid">
+                        Sign in
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

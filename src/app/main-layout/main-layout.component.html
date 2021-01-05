@@ -1,0 +1,40 @@
+<mat-toolbar class="toolbar-1">
+    <img class="image" src="assets/images//imageedit_1_2235652741.png">
+    <span class="spacer"></span>
+    <i style="color: #1e90ff;">Ursu Mandali Co-operative Society, Mysuru.</i>
+    <span class="spacer"></span>
+    <button mat-button [matMenuTriggerFor]="menu" style="width: 110px !important; color:#1e90ff;">
+        <span class="material-icons">
+            account_circle
+        </span>
+        {{loggedIn}}
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="logout()">
+            <mat-icon>keyboard_tab</mat-icon>
+            <span>Logout</span>
+        </button>
+    </mat-menu>
+</mat-toolbar>
+
+<mat-toolbar class="toolbar-2">
+    <!--Customer start-->
+    <button mat-button [matMenuTriggerFor]="customer" class="custom-menu-button">
+        Customer
+        <span class="material-icons dropdown-icon">
+            keyboard_arrow_down
+        </span>
+    </button>
+    <mat-menu #customer="matMenu">
+        <button mat-menu-item class="custom-options" routerLink="/cbs/customer/customer-application">Customers</button>
+    </mat-menu>
+    <!--Customer end-->
+    
+</mat-toolbar>
+
+<router-outlet></router-outlet>
+
+<mat-toolbar class="toolbar-3">
+    <span style="color:#fff;margin-right: 88%;"> &copy;Trinvik 2019 </span>
+    <span style="color:#fff;position: relative;">v7.0</span>
+</mat-toolbar>

@@ -1,0 +1,56 @@
+.toolbar-1 {
+    height:40px;
+    background-color: #d5e1ec;
+  }
+  
+  .toolbar-2 {
+    height:50px;
+    background-color: #3d9deac7;
+  }
+  
+  .toolbar-3 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    background-color: #3d9deac7;
+    font-weight: 100;
+    font-size: 1rem;
+  }
+    
+  .image {
+    height: 173px;
+    margin-left: -59px;
+  }
+  
+  .custom-menu-button {
+    width: 9%;
+    background-color: #FFC107;
+    margin-left: 0.25%;
+    box-shadow: 0 2px 5px grey;
+    -webkit-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+    font-size: 12px;
+    color: rgb(36, 33, 33);
+    height: 30px;
+  }
+  
+  .btn-bod {
+    margin-left: 1%;
+    width: 5%;
+    height: 2rem;
+    background: #ffc107;box-shadow: 0 2px 5px grey;
+  }
+  
+  .custom-options {
+    width:250px;
+    font-size: 16px;
+    padding:0 2rem;
+  }
+  
+  .dropdown-icon {
+    position: absolute;
+    left: 85%;
+    top: 17%;
+    margin-left: -9px;
+  }

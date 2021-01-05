@@ -1,0 +1,61 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a routerLink="/cbs/dashboard/dashboard">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Customers</li>
+    </ol>
+</nav>
+<div class="col-md-4" *ngIf="customerTableDiv">
+    <mat-card style="padding: 0px;height: 460px;overflow:auto;">
+        <mat-toolbar class="card-title">
+            Customers
+            <span class="spacer"></span>
+            <button mat-stroked-button (click)="createCustomer()">
+                <mat-icon aria-label="Create new record">add</mat-icon> New
+            </button>
+        </mat-toolbar>
+        <!-- <mat-card-content style="padding:15px;">
+            <div class="col-md-12" style="margin:0px; width: 200px;">
+                <mat-form-field>
+                    <input matInput (keyup)="applyFilterOnCustomer($event.target.value)" placeholder="Search">
+                </mat-form-field>
+            </div>
+            <div class="row noMargin">
+                <div class="col-12">
+                    <table mat-table [dataSource]="customerDataSource" matSort class="table-border">
+                        <ng-container matColumnDef="name">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+                            <td mat-cell *matCellDef="let row">
+                                {{row.name}}
+                            </td>
+                        </ng-container>
+                        <ng-container matColumnDef="action">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header>Action </th>
+                            <td mat-cell *matCellDef="let row">
+                                <div class="example-button-row">
+                                    <button mat-icon-button>
+                                        <mat-icon aria-label="Detail">list
+                                        </mat-icon>
+                                    </button>
+                                    <button mat-icon-button
+                                        *ngIf="loggedUser.roles[0].groupCode === 'CEO' || loggedUser.roles[0].groupCode === 'PRE'">
+                                        <mat-icon aria-label="Drop record">delete
+                                        </mat-icon>
+                                    </button>
+                                </div>
+                            </td>
+                        </ng-container>
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    </table>
+                </div>
+                <div class="col-md-12">
+                    <mat-paginator #paginator [pageSizeOptions]="[5,10,15]"
+                        [showFirstLastButtons]="true">
+                    </mat-paginator>
+                </div>
+            </div>
+        </mat-card-content> -->
+    </mat-card>
+</div>
