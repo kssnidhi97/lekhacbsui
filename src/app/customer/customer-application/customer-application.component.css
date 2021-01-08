@@ -1,0 +1,23 @@
+mat-paginator {
+    font-size: 10px;
+}
+.mat-autocomplete-panel {
+    width: 215px;
+    pointer-events: auto;
+    bottom: 96.5px;
+    left: 705.234px;
+}
+
+.image-upload > input
+{
+    display: none;
+}
+
+.image-upload img
+{
+    width: 80px;
+    cursor: pointer;
+}
+.cdk-overlay-pane{
+    width:fit-content !important;
+}

@@ -4,6 +4,10 @@ import { CommonModule } from '@angular/common';
 import { CustomerRoutingModule } from './customer-routing.module';
 import { CustomerApplicationComponent } from './customer-application/customer-application.component';
 import { MaterialModule } from '../material/material.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CustomerService } from './customer.service';
+import { HttpService } from '../share/http.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -11,7 +15,10 @@ import { MaterialModule } from '../material/material.module';
   imports: [
     CommonModule,
     CustomerRoutingModule,
-    MaterialModule
-  ]
+    MaterialModule,
+    ReactiveFormsModule,
+    HttpClientModule
+  ],
+  providers: [CustomerService, HttpService]
 })
 export class CustomerModule { }
